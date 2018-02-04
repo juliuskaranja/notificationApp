@@ -55,9 +55,10 @@
     <script type="text/javascript">
         app.initialize();
 
-
-
-
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log(navigator.vibrate);
+        }
     </script>
 </body>
 

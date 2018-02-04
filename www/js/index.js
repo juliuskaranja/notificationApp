@@ -28,7 +28,9 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
 
-        navigator.notification.alert(
+        navigator.notification.beep(3);
+
+        /*navigator.notification.alert(
             'You are the winner!',  // message
             alertDismissed,         // callback
             'Game Over',            // title
@@ -49,7 +51,7 @@ var app = {
             'Registration',            // title
             ['Ok','Exit'],             // buttonLabels
             'Jane Doe'                 // defaultText
-        );
+        );*/
     },
     // deviceready Event Handler
     //
